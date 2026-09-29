@@ -1,12 +1,14 @@
 # C++ Command-Line Utility Suite
 
+   ![CI](https://github.com/adjustcodes2317/Cpp-Command-Line-Utility-Suite/actions/workflows/ci.yml/badge.svg)
+
 A menu-driven terminal program with five small tools. It started as my
 single-file C++ course capstone. I later split it into modules, added tests
 and CMake, and tightened up how it handles bad input.
 
-<!-- ADD ONE REAL SENTENCE HERE: something that actually tripped you up while
-     building this (a bug, a design choice you changed your mind on). Delete
-     this comment when done. -->
+
+While reviewing my own tests I found that they used `assert`, which is removed in Release builds, so they were passing without checking anything. I rewrote them with my own check macro.
+Also found that the program looped forever if input ended (Ctrl+D), because my input function never checked for end-of-file. It now exits cleanly.
 
 ## The tools
 
