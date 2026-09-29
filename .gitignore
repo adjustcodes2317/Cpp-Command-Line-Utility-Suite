@@ -1,0 +1,17 @@
+build/
+cmake-build-*/
+.vscode/
+.idea/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+*.exe
+*.out
+*.o
+*.obj
+Testing/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
